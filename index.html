@@ -10,8 +10,14 @@
     <body>
         <div class="content">
             <h1 id="title">Dice Roller</h1>
-            <input type="number" id="reps" value=1>
-            <input type="number" id="faces" value=20>
+            <div class="input-group">
+                <label for="reps">Repetitions</label>
+                <input name="reps" type="number" id="reps" value=1>
+            </div>
+            <div class="input-group">
+                <label for="faces">Faces</label>
+                <input name="faces" type="number" id="faces" value=20>
+            </div>
             <br>
             <button id="roll-button" onclick="roll()">Roll</button>
             <p id="output">0</p>

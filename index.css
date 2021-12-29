@@ -18,6 +18,14 @@ html, body{
     text-align: center;
 }
 
+.input-group{
+    display: inline-block;
+}
+
+.input-group label{
+    display: block;
+}
+
 input{
     font-size: 1.5rem;
 }
