@@ -24,12 +24,14 @@ function roll_die_repeat(reps, n){
 }
 
 function parse_roll(string){
-    let list = string.split(/d/)
-        .filter(x=>x!=='');
-    if(list.length === 1){
-        return [1, list[0]];
-    }else if(list.length === 2){
-        return list
+    if(string){
+        let list = string.split(/d/)
+            .filter(x=>x!=='');
+        if(list.length === 1){
+            return [1, list[0]];
+        }else if(list.length === 2){
+            return list
+        }
     }
     return [1, 20];
 }
