@@ -1,3 +1,8 @@
+:root{
+    --bg: #111;
+    --fg: #eee;
+}
+
 html, body{
     margin: 0;
     padding; 0;
@@ -6,8 +11,8 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111;
-    color: #fff;
+    background: var(--bg);
+    color: var(--fg);
 }
 
 #title{
@@ -36,4 +41,17 @@ input{
 
 #output{
     font-size: 2em;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:visited{
+    color: var(--fg)
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: #7976ff;
 }
