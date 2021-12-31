@@ -45,6 +45,7 @@ input{
 
 .link{
     text-decoration: none;
+    color: var(--fg)
 }
 
 .link:visited{
