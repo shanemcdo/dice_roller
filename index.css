@@ -31,6 +31,11 @@ html, body{
     display: block;
 }
 
+.input-group input{
+	width: 4rem;
+	margin: 5px 0;
+}
+
 input, select{
     font-size: 1.5rem;
 }
