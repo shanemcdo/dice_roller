@@ -18,6 +18,14 @@
                 <label for="faces">Faces</label>
                 <input name="faces" type="number" id="faces" value=20>
             </div>
+            <div class="input-group">
+                <label for="roll-type">Roll Type</label>
+                <select name="roll-type" id="roll-type">
+					<option value="Standard">Standard</option>
+					<option value="Advantage">Advantage</option>
+					<option value="Disadvantage">Disadvantage</option>
+				</select>
+            </div>
             <br>
             <button id="roll-button" onclick="roll()">Roll</button>
             <p id="output">0</p>
