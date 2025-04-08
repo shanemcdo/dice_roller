@@ -23,4 +23,7 @@ function roll(){
 let [reps, faces] = parse_roll(GET.roll);
 els.reps.value = reps;
 els.faces.value = faces;
+if(GET.type) {
+	els.roll_type.value = GET.type
+}
 roll()
